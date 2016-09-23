@@ -8,5 +8,5 @@ Copyrigth
 Jorge Chamorro Padial &
 Germán Iglesias Padial
 
-Licencia GNU GEPL (Ver archivo LICENSE para más información)
+Licencia GNU GPL (Ver archivo LICENSE para más información)
 
