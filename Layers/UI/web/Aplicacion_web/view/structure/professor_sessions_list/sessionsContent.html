@@ -1,0 +1,44 @@
+<section id="sessionContent">
+     <h2>({ACTIVITY_CODE}) {ACTIVITY_NAME}</h2>
+     <span id='pan'>→<a href="{BACK_URL}" title="#MY_ACTIVITIES#">#MY_ACTIVITIES#</a></span>
+      <h3>
+            #SESSIONS_ADMIN#
+        </h3>
+
+    </br>
+    {CONTENT_ERROR}
+    <section id="sessionContentForm">
+        
+        <form action='{FORM_URL}={ACTIVITY_ID}' method="POST" >            
+            <p><label>#DATETIMESESSION#</label> <input type="text" name="sessionDateStart" id="datepicker" value="{DATETIME_VALUE}"/></p>
+            <p><label>#DATETIMESESSIONHOUR# | #DATETIMESESSIONMINUTE#</label> <input class="formureducido" type="text" name="sessionDateStartHour" value="00" size="2" value="{DATETIME_HOUR_VALUE}"/>
+            <input class="formureducido" type="text" name="sessionDateStartMinute" value="00" size="2" value="{DATETIME_MINUTE_VALUE}"/></p>
+            <p><label>#DATETIMEDURATION#</label> <input class="formureducido" type="text" name="sessionDateDuration" value="{DATETIME_DURATION_VALUE}"/></p>
+            <p><label>#PASSWORD#</label> <input type="text" name="sessionPassword"></p>
+            <p>
+                <label>#PLACE#</label>
+                <select name="sessionPlaceSelect" >
+                    {PLACE_OPTION}
+                </select>
+            </p>
+            <p><input type="submit" value="#NEWSESSION#" name ='sessionNew' class="formSubmitButton"></p>
+        </form>
+    </section>
+    <section id="sessionContentList">
+        <h3>
+            #SESSIONS_LIST#
+        </h3>
+        <table class="tableElegant" cellspacing="0">
+            <tr>
+                <th>#SESSION_NUMBER#</th>
+                <th>#SESSION_DATESTART#</th>
+                <th>#SESSION_DATEEND#</th>
+                <th>#SESSION_PASSWORD#</th>  
+                <th>#SESSION_PLACE#</th> 
+                <th>#SESSION_DELETE#</th>
+            </tr>
+                  {SESSION_ROW}
+        </table>
+    </section> 
+ 
+</section>

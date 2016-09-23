@@ -1,0 +1,26 @@
+     <form action="index.php?adminUsers" method="POST">
+         <input type="hidden" name="formActivated" value="1">
+         <a href="index.php?adminUsers&excel={DNICHAIN}&area={DNIAREA}&centre={DNICENTRE}">#DOWNLOAD_FROM_EXCEL#</a>
+         <table  cellspacing="0" class="tableElegant">
+                <tr>
+                    <th>✓</th>
+                    <th>#USER_NAME#</th>
+                    <th>#USER_LASTNAME1#</th>
+                    <th>#USER_LASTNAME2#</th>
+                    <th>#USER_REALID#</th>    
+                    <th>#USER_MAIL#</th>  
+                    <th>#USER_PASSWORD#</th> 
+                    <th>#USER_PHONE#</th> 
+                    
+                    <th>#USER_CENTRE_AND_AREA#</th> 
+                                    
+                </tr>  
+                {USER_LIST}
+            </table>
+         <a href="index.php?adminUsers&excel={DNICHAIN}&area={DNIAREA}&centre={DNICENTRE}">#DOWNLOAD_FROM_EXCEL#</a>
+        <div>
+             <span>#SELECTED_USERS# </span>
+             <input type="submit" value="Modificar" name="USERS_MODIFY">             
+                        
+         </div>
+    </form>

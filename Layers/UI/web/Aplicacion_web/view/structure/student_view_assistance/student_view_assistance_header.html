@@ -1,0 +1,21 @@
+    <h2>{ACTIVITY_NAME}</h2>
+    <span id='pan'>→<a href="index.php?studentActivities&view={ACTIVITY_ID}" title="#ACTIVITIES#">{ACTIVITY_NAME}</a></span>
+    <section class="contentDiv">        
+        <h3>#CHECK_ASSISTANCE#</h3>
+            <p>
+                {ACTIVITY_ASSISTANCE_RESULT}
+                
+            </p>
+            <p>
+                {ACTIVITY_ASSISTANCE}
+            </p>
+        <h3>#ACTIVITY_SESSIONS#</h3>
+        <table class="tableElegant" cellspacing='0'>
+            <tr>
+                <th>#SESSION_DATE_START#</th>
+                <th>#SESSION_DATE_END#</th>
+                <th>#SESSION_DATE_ASSISTED#</th>
+            </tr>
+            {TABLE}
+        </table>
+    </section>

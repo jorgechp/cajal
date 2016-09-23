@@ -1,0 +1,17 @@
+<tr>
+    <td>
+        <a href="index.php?messages&view={MESSAGE_ID}">{MESSAGE_SUBJECT}</a>
+    </td>
+    <td>
+        {MESSAGE_FROM}
+    </td>
+    <td>
+        {MESSAGE_DATE}
+    </td>    
+     <td>
+        {MESSAGE_ISREAD}
+    </td>    
+    <td>
+        <input type="checkbox" name="delete_messages[]" value="{MESSAGE_ID}">
+    </td>
+</tr>

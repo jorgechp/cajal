@@ -1,0 +1,16 @@
+<div class="login_img"> 
+	<img src="{IMG_FOLDER}/login_main_icon.png"> </div>
+<section id="login" class="span3">
+    
+
+    <form action="index.php?login" method="post" class="form">
+        <div style="height:0px; width:0px; position:absolute; overflow:hidden">
+            <input type="submit" name='userLoginData' value='#LOGIN_SUBMIT_TEXT#' class="formSubmitButtonLogin"  tabindex=3>
+        </div>
+        <p> <label>#LOGIN_TEXT#</label> <input type='text' name="userLogin" class="formInputLogin"  tabindex=1>
+            <input type="submit" name="LOGIN_PASSWORD_REMINDER" value="#REMINDER_PASSWORD#"  tabindex=4>
+        </p>
+        <p><label>#PASSWORD_TEXT#</label> <input type='password' name="userPassword" class="formInputLogin"  tabindex=2></p>
+        <div id="loginFormSubmit"><input type="submit" name='userLoginData' value='#LOGIN_SUBMIT_TEXT#' class="formSubmitButtonLogin"  tabindex=3></div>
+    </form>
+</section>

@@ -1,0 +1,22 @@
+<div onclick="toggleElement('singleCalificationButton',true)">
+                <span class="infoText">#APPLY_GENERAL_CALIFICATION# </span>
+                <select name="competenceEvalSendEvaluationApplyAll">             
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5" selected>5</option>
+                </select> 
+                <span>#POINTS#</span>
+                <select name="competenceEvalSendEvaluationApplyFilter">
+                    <option value="0" selected >#APPLY_ALL#</option>
+                    <option value="1"  >#APPLY_ASSISTED#</option>
+                    <option value="2"  >#APPLY_SELECTED#</option>
+                </select>   
+                <span>#ON_INDICATOR#</span>
+                 <select name="competenceEvalSendEvaluationApplyOnIndicator">
+                    {INDICATOR_OPTION_LIST}  
+                    <option value="-1" selected >#ALL_INDICATORS#</option>
+                </select> 
+                <input type="submit" name="competenceEvalSendEvaluationAll" value="#APPLY_CALIFICATION#">
+</div>

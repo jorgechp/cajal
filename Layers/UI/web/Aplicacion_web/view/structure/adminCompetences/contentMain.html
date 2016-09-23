@@ -1,0 +1,46 @@
+<h2>#COMPETENCES#</h2>
+
+<div>
+    <p>
+        {CONTENT_INFORMATION}
+    </p>
+    
+    <h3>#SEARCH#</h3>
+    <form action="index.php?adminCompetences&buscador" method="POST" class="form">
+        <label>#ADD_CODE#/#NAME#</label><input  type="text" name="USER_LOOK_CODE" class="formubusca">    
+        <label class="displayFormToggleText">#AREA#</label>
+        <select name="USER_SEARCH_AREA">
+             <option value="-1">#ALL#</option>
+            {OPTIONS_AREA}
+        </select>
+        <label class="displayFormToggleText">#MATERY#</label>
+        <select name="USER_SEARCH_MATERY">
+            <option value="-1">#ALL#</option>
+            {OPTIONS_MATERY}
+        </select>        
+        <p><input type="submit" value="#SEARCH#" name="BUSCAR" ></p>
+    </form>
+    {TABLE}
+    <hr>
+    <h3>#CREATE_COMPETENCE#</h3>
+     <p>
+        #UPLOAD_FROM_FILE_DESCRIPTION#
+    </p>
+         <form action="index.php?adminCompetences" method="POST" class="form">
+             <input type="hidden" name="formActivated" value="1">
+             <p><label class="displayFormToggleText">#NAME#</label><input type="text" name="COMPETENCE_INSERT_NAME" class="formInput" value="{COMPETENCE_INSERT_NAME}"></p>
+             <p><label class="displayFormToggleText">#CODE#</label><input type="text" name="COMPETENCE_INSERT_CODE" class="formInput" value="{COMPETENCE_INSERT_CODE}"></p>
+             <p><label class="displayFormToggleText">#DESCRIPTION#</label><textarea name="COMPETENCE_INSERT_DESCRIPTION" class="formTextArea">{COMPETENCE_INSERT_DESCRIPTION}</textarea></p>
+             <p>    
+                 <label>#MATERY#</label>
+                 <select name="COMPETENCE_INSERT_TYPE">
+                     {COMPETECENCE_TYPE_LIST}
+                 </select>
+             </p>
+
+             <p><input type="submit" value="añadir" name="COMPETENCE_INSERT" class="formSubmitButton"></p>  
+        </form>
+     
+
+        
+</div>

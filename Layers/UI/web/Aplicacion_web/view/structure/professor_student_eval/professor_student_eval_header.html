@@ -1,0 +1,24 @@
+<section>
+    <h2>{ACTIVITY_NAME}</h2>
+    <span id='pan'>→<a href="index.php" title="#MY_ACTIVITIES#">#MY_ACTIVITIES#</a></span>
+    <h3>#EVALUATION_TABLE#</h3>
+
+    <a class="displayText" href="javascript:toggle();">#SHOW_COLUMNS#</a>
+    <div id="toggleText">
+        <form name="tcol" onsubmit="return false">
+            <ol>
+                {SESSIONS_SHOW_COLUMNS}
+            </ol>
+        </form>
+    </div>
+    <table class="tableElegant" cellspacing="0">
+        <tr>
+            <th>#STUDENT_NAME#</th>
+            <th>#STUDENT_REAL_ID#</th>            
+            {SESSION_LIST}           
+            <th>#STUDENT_MEANS#</th>
+            <th>#STUDENT_MAX#</th>
+        </tr>
+        {EVAL_TABLE}
+    </table>
+</section>

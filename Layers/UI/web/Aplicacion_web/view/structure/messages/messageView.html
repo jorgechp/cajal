@@ -1,0 +1,23 @@
+<h2>#VIEW_MESSAGE#</h2>
+<form action="index.php?messages" method="POST">
+    <ul>
+        <li><span class="infoText">#FROM#</span> <a href="index.php?user={USER_FROM_ID}">{MESSAGE_FROM}</a></li>
+        <li><span class="infoText">#TO#</span> <p>{MESSAGE_TO}</p></li>
+    </ul>
+    {MESSAGE_DELETE}
+    <input type="hidden" name="delete_messages[]" value="{MESSAGE_ID}">
+    <section id="messageView">
+       
+        <section>
+           
+                 <h3>{MESSAGE_TITLE}</h3>
+           
+        </section>
+        <section>
+            <p>
+                {MESSAGE_CONTENT}
+            </p>
+        </section>
+    </section>
+    {MESSAGE_DELETE}
+</form>

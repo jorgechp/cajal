@@ -1,0 +1,18 @@
+<section id="sendMessage">
+    <h2>#SEND_MESSAGE#</h2>
+    {MESSAGE_RESULT}
+    <form action="index.php?messages&send" method="post">
+        <p>#SELECT_OPTION#</p>
+        <p><input type="radio" name="type_message" value=0> #GRUPO#</p>
+         <select name="recipients_group">
+             {RECIPIENTS_GROUP_ELEMENTS}
+        </select>
+        <p><input type="radio" name="type_message" value=1 checked> #RECIPIENTS#</p> 
+        <p><input type="text" name="recipients_list" value="{MESSAGE_RECIPIENTS}" class="formInput"></p>
+        <p><label>#SUBJECT#</label> <input type="text" name="subject" value="{MESSAGE_SUBJECT}" class="formInput" ></p>
+        <p><label>#MESSAGE#</label> 
+            <textarea name="text" class="formTextArea">{MESSAGE_TEXT}</textarea>        
+        </p>
+        <p><label>#SEND#</label> <input type="submit" name="messageSend" value="#SEND#"></p>
+    </form>
+</section>

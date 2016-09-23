@@ -1,0 +1,44 @@
+<h2>#UPLOAD_FROM_FILE#</h2>
+<a href="javascript:history.back()">#RETURN_BACK#</a>
+<p>
+    {RESULT_INFORMATION}
+    {LIST_RESULT}
+    {LINE}
+</p>
+<p>
+    #DESCRIPTION_1#
+</p>
+<h3>#UPLOAD_ACTIVITIES#</h3>
+<p>
+    #DESCRIPTION_2#
+</p>
+<form action="index.php?uploadFromFile" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="type" value="activities"/>
+    <input type="file" name="file"/>
+    <input type="submit" value="#UPLOAD#" name="activities"/>
+</form>
+<h3>#UPLOAD_COMPETENCES#</h3>
+<p>
+    #DESCRIPTION_3#
+</p>
+<p>
+    #DESCRIPTION_31#
+</p>
+<form action="index.php?uploadFromFile" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="type" value="competences"/>
+    <input type="file" name="file"/>    
+    <input type="submit" value="#UPLOAD#" name="competences"/>
+</form>
+<h3>#UPLOAD_USERS#</h3>
+<p>
+    #DESCRIPTION_4#
+</p>
+<h3>#UPLOAD_ALL#</h3>
+<p>
+    #DESCRIPTION_5#
+</p>
+<form action="index.php?uploadFromFile" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="type" value="all"/>
+    <input type="file" name="file"/>
+    <input type="submit" value="#UPLOAD#" name="all"/>
+</form>

@@ -1,0 +1,29 @@
+<section>
+    <h2>#NOTIFICATIONS#</h2>
+    
+    <a class="displayText" href="javascript:toggle();">#SHOW_COLUMNS#</a>
+    <div id="toggleText">
+        <form name="tcol" onsubmit="return false">
+            <ol>                
+                <li><div class="inputToggleList"><input type=checkbox  name="col1" onclick="toggleVis(this.name)"  > #REPORT_TEXT#</div></li>                
+                <li><div class="inputToggleList"><input type=checkbox  name="col2" onclick="toggleVis(this.name)"  > #SENDER#</div></li>    
+                <li><div class="inputToggleList"><input type=checkbox  name="col3" onclick="toggleVis(this.name)"  > #SOLVE#</div></li>
+            </ol>
+        </form>
+    </div>
+    
+    
+    <table class="tableElegant" cellspacing="0">
+        <tr>
+            <th >#SUBJECT#</th>
+            <th>#DATE#</th>
+            <th name="tcol1" id="hiddenColumn">#REPORT_TEXT#</th>
+            <th name="tcol2" id="hiddenColumn">#SENDER#</th>
+            <th >#IS_ERROR#</th>
+            <th>#STATUS#</th>          
+            <th name="tcol3" id="hiddenColumn">#SOLVE#</th>  
+            <th>#DELETE#</th>  
+        </tr>
+        {REPORT_ELEMENT}
+    </table>
+</section>

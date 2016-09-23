@@ -1,0 +1,25 @@
+     <form action="index.php?adminCompetences" method="POST">
+         <input type="hidden" name="formActivated" value="1">
+         <a href="index.php?adminCompetences&excel={EXCEL_CHAIN}&excel_area={EXCEL_AREA}&excel_materia={EXCEL_MATERIA}">#DOWNLOAD_FROM_EXCEL#</a>
+         <a href="index.php?adminCompetences&excel={EXCEL_CHAIN}&indicators&excel_area={EXCEL_AREA}&excel_materia={EXCEL_MATERIA}">#DOWNLOAD_FROM_EXCEL_WITH_INDICATORS#</a>
+         <table  cellspacing="0" class="tableElegant">
+                <tr>
+                    <th>✓</th>
+                    <th>#COMPETENCE_NAME#</th>
+                    <th>#COMPETENCE_CODE#</th>
+                    <th>#COMPETENCE_DESCRIPTION#</th>
+                    <th>#COMPETENCE_TYPE#</th>    
+                    <th>#COMPETENCE_INDICATORS#</th> 
+  
+                      
+                </tr>  
+                {COMPETENCE_LIST}
+            </table>
+         <a href="index.php?adminCompetences&excel={EXCEL_CHAIN}&excel_type={EXCEL_TYPE}&excel_area={EXCEL_AREA}&excel_materia={EXCEL_MATERIA}">#DOWNLOAD_FROM_EXCEL#</a>
+         <a href="index.php?adminCompetences&excel={EXCEL_CHAIN}&indicators&excel_area={EXCEL_AREA}&excel_materia={EXCEL_MATERIA}">#DOWNLOAD_FROM_EXCEL_WITH_INDICATORS#</a>         
+        <div>
+             <span>#SELECTED_COMPETENCES# </span>
+             <input type="submit" value="Modificar" name="COMPETENCES_MODIFY">             
+             <input type="submit" value="Eliminar" name="COMPETENCES_DELETE">             
+         </div>
+    </form>

@@ -1,0 +1,31 @@
+     <form action="index.php?adminActivities" method="POST">
+         <input type="hidden" name="formActivated" value="1">
+         <a href="index.php?adminActivities&excel={EXCEL_CHAIN}&excel_type={EXCEL_TYPE}&excel_title={EXCEL_TITLE}">#DOWNLOAD_EXCEL_REPORT#</a>
+         <a href="index.php?adminActivities&excel={EXCEL_CHAIN}&competences&excel_type={EXCEL_TYPE}&excel_title={EXCEL_TITLE}">#DOWNLOAD_EXCEL_REPORT_WITH_COMPETENCES#</a>
+         <a href="index.php?adminActivities&excel={EXCEL_CHAIN}&full&excel_type={EXCEL_TYPE}&excel_title={EXCEL_TITLE}">#DOWNLOAD_EXCEL_REPORT_WITH_INDICATORS#</a>
+         <table  cellspacing="0" class="tableElegant">
+         
+                <tr>                   
+                    <th>✓</th>
+                    <th>#ACTIVITY_NAME#</th>
+                    <th>#ACTIVITY_DESCRIPTION#</th>
+                    <th>#ACTIVITY_CODE#</th> 
+                    <th>#ACTIVITY_COMPETENCES#</th>                     
+                    <th>#ACTIVITY_PROFESSORS#</th>  
+                    <th>#ACTIVITY_SESSIONS#</th>  
+                 
+                    <th>#ACTIVITY_CATEGORY#</th>  
+                </tr>  
+
+                {ACTIVITY_LIST}
+             
+         </table>
+         <a href="index.php?adminActivities&excel={EXCEL_CHAIN}&excel_type={EXCEL_TYPE}&excel_title={EXCEL_TITLE}">#DOWNLOAD_EXCEL_REPORT#</a>
+         <a href="index.php?adminActivities&excel={EXCEL_CHAIN}&competences&excel_type={EXCEL_TYPE}&excel_title={EXCEL_TITLE}">#DOWNLOAD_EXCEL_REPORT_WITH_COMPETENCES#</a>
+         <a href="index.php?adminActivities&excel={EXCEL_CHAIN}&full&excel_type={EXCEL_TYPE}&excel_title={EXCEL_TITLE}">#DOWNLOAD_EXCEL_REPORT_WITH_INDICATORS#</a>
+         <div>
+             <span>#SELECTED_ACTIVITIES# </span>
+             <input type="submit" value="Modificar" name="ACTIVITIES_MODIFY">             
+             <input type="submit" value="Eliminar" name="ACTIVITIES_DELETE">             
+         </div>
+    </form>

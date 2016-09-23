@@ -1,0 +1,51 @@
+<h2>#ACTIVITIES#</h2>
+
+<div>
+    <p>
+        {CONTENT_INFORMATION}
+    </p>
+    <h3>#SEARCH#</h3>
+    <form action="index.php?adminActivities&buscador" method="POST" class="form">
+        <label>#NAME#</label><input  type="text" name="USER_LOOK_ACTIVITY" class="formubusca">  
+        <label class="displayFormToggleText">#TYPE#</label>
+        <select name="USER_SEARCH_TYPE">
+             <option value="-1">#ALL#</option>
+            {OPTIONS_TYPE}
+        </select>
+        <label class="displayFormToggleText">#TITLE#</label>
+        <select name="USER_SEARCH_TITLE">
+             <option value="-1">#ALL#</option>
+            {OPTIONS_TITLE}
+        </select>       
+        <p><input type="submit" value="#SEARCH#" name="BUSCAR" ></p>
+    </form>
+    {FORM_CONTENT}
+    <h3>#FAST_ASSOCIATION#</h3>
+    <p>
+        #FAST_ASSOCIATION_DESCRIPTION#
+    </p>
+    <form action="index.php?adminActivities&excelActivitiesProfessors" method="POST" class="form" enctype="multipart/form-data">
+        <input  type="file" name="file" class="formubusca">  
+        <p><input type="submit" value="#ADD#" name="ACTIVITIES_ASSOCIATION" ></p>
+    </form>    
+    <hr>
+    <h3>#CREATE_ACTIVITY#</h3>
+    <p>
+        #UPLOAD_FROM_FILE_DESCRIPTION#
+    </p>
+            <form action="index.php?adminActivities" method="POST" class="form">
+                 <input type="hidden" name="formActivated" value="1">
+                 <p><label class="displayFormToggleText">#NAME#</label><input type="text" name="ACTIVITY_INSERT_NAME" class="formInput" value="{ACTIVITY_INSERT_NAME}"></p>
+                 <p><label class="displayFormToggleText">#DESCRIPTION#</label><textarea name="ACTIVITY_INSERT_DESCRIPTION" class="formTextArea">{ACTIVITY_INSERT_DESCRIPTION}</textarea></p>
+                 <p><label class="displayFormToggleText">#CODE#</label><input type="text" name="ACTIVITY_INSERT_CODE" value="{ACTIVITY_INSERT_CODE}"></p>
+                 <p><label class="displayFormToggleText">#CATEGORY#</label>
+                 <select name="ACTIVITY_INSERT_CATEGORY">
+                     {ACTIVITIES_CATEGORY_LIST}
+                 </select>
+                 </p>                 
+                 <p><input type="submit" value="añadir" name="ACTIVITY_INSERT" class="formSubmitButton"></p>  
+             </form>
+
+        
+
+</div>

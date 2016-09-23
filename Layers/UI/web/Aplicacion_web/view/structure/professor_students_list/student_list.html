@@ -1,0 +1,28 @@
+<section id='studentList'>
+    <h2>({ACTIVITY_CODE}) {ACTIVITY_NAME}</h2>
+    <span id='pan'>→<a href="index.php" title="#MY_ACTIVITIES#">#MY_ACTIVITIES#</a></span>
+    <h3>#STUDENT_LIST#</h3>
+    
+    <form action='index.php?students={ACTIVITY_ID}' method='POST'>
+        <p>
+            {CONTENT_ERROR}
+        </p>
+        <p>            
+            <span class="classInfo">#ID_OR_MAIL#</span> <input type='text' name='idStudent'>
+            <input type='submit' name='studentNew' value='#ADD_STUDENT#'>
+        </p>        
+    </form>
+    <section id='studentListTable'>
+        <table class="tableElegant" cellspacing="0">
+            <tr>
+                <th>#STUDENT_NAME#</th>
+                <th>#STUDENT_ID#</th>
+                <th>#STUDENT_MAIL#</th>          
+                <th>#STUDENT_DELETE#</th>
+            </tr>
+            
+                  {STUDENT_ROW}
+            
+        </table>
+    </section>
+</section>

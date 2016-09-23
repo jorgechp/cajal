@@ -1,0 +1,14 @@
+<h2>#CHANGE_YEAR#</h2>
+<p>
+    {CONTENT_INFORMATION}
+</p>
+<p>
+    #CHANGE_YEAR_DESCRIPTION_1#
+</p>
+<form action="index.php?changeYear" method="POST">
+     <select name="newYear">
+        <option value="0" checked>{CURRENT_YEAR} (#SYSTEM_YEAR#)</option>
+        {OPTIONS_ELEMENTS}
+    </select> 
+    <input type="submit" name="timeTravel" value="#CHANGE_TIME#">
+</form>

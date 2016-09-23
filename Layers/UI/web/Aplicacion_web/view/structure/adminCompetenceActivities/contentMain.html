@@ -1,0 +1,29 @@
+<p>
+    <a href="index.php?adminActivities">#BACK_TO_ACTIVITIES#</a>
+</p>
+        <p>
+        #UPLOAD_FROM_FILE_DESCRIPTION#
+    </p>
+<h2>#COMPETENCES OF#: {ACTIVITY_NAME}</h2>
+
+
+<div>
+    <p>
+        #SEARCH_INSTRUCTIONS#
+    </p>
+    <form action="index.php?competencesActivity={ACTIVITY_ID}" method="POST">
+        <input type="text" name="search_competence_input" value="{VALUE_INPUT_SEARCH}">
+        <input type="submit" name="search_competence" value="#SEARCH#">
+    </form>
+
+    {COMPETENCE_SEARCH_LIST}
+
+    <table cellspacing="0"  class="tableElegant">
+        <tr>
+            <th>#COMPETENCE_NAME#</th>
+            <th>#COMPETENCE_DESCRIPTION#</th>
+            <th>#COMPETENCE_REMOVE#</th>
+        </tr>
+        {COMPETENCE_LIST}
+    </table>
+</div>

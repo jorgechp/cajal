@@ -1,0 +1,31 @@
+<section id="competenceEvalTableSection">
+    <h2>{COMPETENCE_NAME}</h2>
+    <span id='pan'>→<span id='pan'>→<a href="index.php" title="#MY_ACTIVITIES#">#MY_ACTIVITIES#</a></span> / <a href="index.php?activityEval={ACTIVITY_ID}" title="{ACTIVITY_NAME}">{ACTIVITY_NAME}</a></span>
+    <h3>#COMPETENCES_EVALUATION_TABLE#</h3>
+
+    <div id="competenceEvalTableDiv">
+        <form action="index.php?competenceEval={COMPETENCE_ID}&activityEval={ACTIVITY_ID}" method='POST'>
+            <p>
+                <span class="classInfo">#COMPETENCE_EVALUATION_COURSE#</span> 
+                <select name="competenceEvalSelectedSession">
+                    {COMPETENCE_TABLE_SESSIONS}
+                </select>
+                <input type="submit" value="#LOAD_SESSION#" name="competenceEvalSendSession">
+            </p>
+
+            <hr/>
+            <p>
+                {COMPETENCE_EVAL_ALL_FORM}
+            </p>            
+            <hr/>
+            {COMPETENCE_TABLE}
+            <hr/>
+
+            <br/>
+            <input type="submit" id='singleCalificationButton' value="#SEND_EVALUATIONS#" name="competenceEvalSendEvaluation">
+        </form>
+
+
+
+    </div>
+</section>

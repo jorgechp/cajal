@@ -1,0 +1,87 @@
+<h2>#USERS#</h2>
+
+<div>
+    <p>
+        {CONTENT_INFORMATION}
+        {LIST_ELEMENT}
+        {LINE}
+    </p>
+    <h3>#SEARCH#</h3>
+    <form action="index.php?adminUsers&buscador" method="POST" class="form">
+        <label>#USER_MAIL#</label><input  type="text" name="USER_LOOK_MAIL" class="formubusca">
+        <label>#USER_REALID#</label><input  type="text" name="USER_LOOK_REALID" class="formubusca">
+        <p><input type="submit" value="#SEARCH#" name="BUSCAR" ></p>
+     <p>
+    <h3>#FILTER_USERS#</h3>
+    <a href="index.php?adminUsers&excel=TODO&area=">#DOWNLOAD_ALL_USERS#</a>
+         <label class="displayFormToggleText">#USER_AREA#</label>
+         <select name="USER_LOOK_AREA">
+             <option value="-1">#ALL#</option>
+             {LIST_AREAS}
+         </select>
+         <label class="displayFormToggleText">#USER_CENTRE#</label>
+         <select name="USER_INSERT_CENTRE">
+              <option value="-1">#ALL#</option>
+             {LIST_CENTRES}
+         </select>  
+         <p><input type="submit" value="#FILTER#" name="FILTRAR" ></p>
+     </p>
+        
+    </form>
+      
+       
+
+        {TABLE}
+        <hr>
+    <p>
+        <h3>#ADD_STUDENT_FROM_FILE#</h3>
+        
+    </p>
+ 
+        <p>
+        #ADD_STUDENT_FROM_FILE_TEXT#
+        
+    </p>
+    
+  
+    
+    <p>
+        
+    <form action="index.php?adminUsers&insertStudents" method="post" enctype="multipart/form-data">        
+        <input type="file" name="file" id="uploadedFile">
+        <input type="submit" value="#UPLOAD#" name="uploadedFile">       
+    </form>
+    
+    
+    </p>
+    
+    <h3>#ADD_SINGLE STUDENT#</h3>
+    
+     <form action="index.php?adminUsers" method="POST" class="form">
+     <input type="hidden" name="formActivated" value="1">
+     <p><label class="displayFormToggleText">#USER_NAME#</label><input  type="text" name="USER_INSERT_NAME" class="formInput" value="{USER_INSERT_NAME}"></p>
+     <p><label class="displayFormToggleText">#USER_LASTNAME1#</label><input  type="text" name="USER_INSERT_LASTNAME1" size="6" class="formInput" value="{USER_INSERT_LASTNAME1}"></p>
+     <p><label class="displayFormToggleText">#USER_LASTNAME2#</label><input type="text" name="USER_INSERT_LASTNAME2" size="6" class="formInput" value="{USER_INSERT_LASTNAME2}"></p>
+     <p><label class="displayFormToggleText">#USER_REALID#</label><input class="formubusca"  type="text" name="USER_INSERT_REALID" size="6" class="formInput" value="{USER_INSERT_REALID}"></p>
+     <p><label class="displayFormToggleText">#USER_MAIL#</label><input   type="text" name="USER_INSERT_MAIL" size="6" class="formInput" value="{USER_INSERT_MAIL}"></p>     
+     <p><label class="displayFormToggleText">#USER_PASSWORD#</label><input  type="password" name="USER_INSERT_PASSWORD" size="6" class="formInput" value="{USER_INSERT_PASSWORD}"></p>
+     <p>
+         <label class="displayFormToggleText">#USER_AREA#</label>
+         <select name="USER_INSERT_AREA">
+             {LIST_AREAS}
+         </select>
+     </p>
+     <p>
+         <label class="displayFormToggleText">#USER_CENTRE#</label>
+         <select name="USER_INSERT_CENTRE">
+             {LIST_CENTRES}
+         </select>
+     </p>          
+     <p><label class="displayFormToggleText">#USER_PHONE#</label><input class="formubusca"  type="text" name="USER_INSERT_PHONE" size="6" class="formInput" value="{USER_INSERT_PHONE}"></p>   
+     <span><input type="hidden" value="2" name="USER_INSERT_ROL"></span>
+     <p><input type="submit" value="añadir" name="USER_INSERT" class="formSubmitButton"></p>  
+
+ </form>
+    
+
+</div>

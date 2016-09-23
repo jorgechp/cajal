@@ -1,0 +1,25 @@
+<p>
+    <a href="index.php?adminActivities">#BACK_TO_ACTIVITIES#</a>
+</p>
+
+<h2>#PROFESSORS OF#: {ACTIVITY_NAME}</h2>
+
+<div>
+
+    <form action="index.php?professorsActivity={ACTIVITY_ID}" method="POST">
+        <input class='formubusca' type="text" name="search_professor_input" value="{VALUE_INPUT_SEARCH}">
+        <input type="submit" name="search_professor" value="#SEARCH_DNI#">
+    </form>
+
+    <h3>#PROFESSOR_LIST#</h3>
+    {PROFESSOR_SEARCH_LIST}
+
+    <table cellspacing="0"  class="tableElegant">
+        <tr>
+            <th>#PROFESOR_NAME#</th>
+            <th>#PROFESSOR_ID#</th>
+            <th>#PROFESSOR_REMOVE#</th>
+        </tr>
+        {PROFESSOR_LIST}
+    </table>
+</div>

@@ -1,0 +1,19 @@
+<h2>#VIEW_MESSAGE#</h2>
+<section id="messagesList">
+    <form name="manageMessages" action="index.php?messages" method="post">
+        <input type="submit" class="tableSelectionButton" name="manageMessages" value="#TABLE_SUBMIT#">
+        <table class="tableElegant" cellspacing='0'>
+            <tr>
+                <th>#TABLE_HEADER_SUBJECT#</th>
+                <th>#TABLE_HEADER_FROM#</th>
+                <th>#TABLE_HEADER_DATE#</th>
+                <th>#TABLE_HEADER_ISREAD#</th>
+                <th>#TABLE_HEADER_DELETE#</th>
+            </tr>
+            
+                {MESSAGES_LIST}
+
+        </table>
+        <input type="submit" class="tableSelectionButton" name="manageMessages" value="#TABLE_SUBMIT#">
+    </form>
+</section>

@@ -1,0 +1,31 @@
+<?php
+
+$strings_message_index = array(
+    'TABLE_HEADER_SUBJECT' => 'Asunto',
+    'TABLE_HEADER_FROM' => 'Remitente',
+    'TABLE_HEADER_TO' => 'Destinatario(s)',
+    'TABLE_HEADER_DATE' => 'Fecha',
+    'TABLE_HEADER_ISREAD' => '¿Leído?',
+    'TABLE_HEADER_DELETE' => 'Eliminar',
+    'TABLE_SUBMIT' => 'Eliminar seleccionados',
+    'VIEW_MESSAGES' => 'Ver mensajes',
+    'NO_MESSAGES_AVAILABLE' => 'No hay mensajes',
+    'MESSAGE_NOT_READ' => 'No',
+    'SELECT_OPTION' => 'Seleccionar una de las dos opciones',
+    'GRUPO' => 'Enviar a todos los usuarios relacionados con una actividad',
+    'RECIPIENTS' => 'Enviar a destinatarios concretos (por dni o correo)',
+    'SUBJECT' => 'Asunto',
+    'FROM' => 'Remitente',
+    'TO' => 'Destinatario(s)',
+    'MESSAGE' => 'Mensaje',
+    'SEND' => 'Enviar',
+    'RECIPIENT_FORMAT_ERROR' => 'El formato de los destinatarios no es correcto',
+    'SUBJECT_ERROR' => 'El asunto especificado no es correcto',
+    'MESSAGE_ERROR' => 'El mensaje especificado no es correcto',
+    'ID_ERROR' => 'El siguiente usuario no existe: ', 
+    'SEND_OK' => 'Mensaje Enviado correctamente', 
+    'MESSAGE_READ' => 'Mensaje leído', 
+    'MESSAGES_TITLE' => 'Buzón de mensajes', 
+    'VIEW_MESSAGE' => 'Ver mensaje', 
+    
+    );

@@ -1,0 +1,69 @@
+<section>
+    <h2>#MY_PROFILE#</h2>
+    <div>
+        <h3>#CHANGE_ROL#</h3>
+        
+        <ul>            
+            {ROLE_LINK_STUDENT}
+            {ROLE_LINK_PROFESSOR}
+            {ROLE_LINK_ADMIN}         
+        </ul>
+        <h3>#OTHERS#</h3>
+        <p class="infoText">
+            {CONTENT_INFO}
+            <br>
+        </p>
+        
+        <table>
+            <tr>
+                <td>#NAME#</td>
+                <td>{NAME}</td>
+            </tr>
+            <tr>
+                <td>#LASTNAME1#</td>
+                <td>{LASTNAME1}</td>
+            </tr>
+            <tr>
+                <td>#LASTNAME2#</td>
+                <td>{LASTNAME2}</td>
+            </tr>
+            <tr>
+                <td>#MAIL#</td>
+                <td>{MAIL}</td>
+            </tr>
+            <tr>
+                <td>#REALID#</td>
+                <td>{REALID}</td>
+            </tr>            
+        </table>
+
+        <div id="profileAvatar">
+            <img src="avatarGenerator/AvatarGenerator.php?name={IMG_NAME}" alt="#PROFILE_IMAGE#">            
+        </div>
+        <form action="index.php?myProfile" method="POST" class="form" enctype="multipart/form-data">
+            <p>
+                <label>#UPLOAD#</label><input type="file" name="ADD_PROFILE_PHOTO"  class="formSubmitButton">
+                <input type="submit"  name="ADD_PROFILE_SUBMIT" value="#UPDATE_PHOTO#" class="formSubmitButton">
+            </p>
+            <div>
+                 <p><label>#NAME_OLD#</label><input type="text" name="CHANGE_USER_NAME_OLD" class="formInput" value="{NAME}"></p>
+                 <p><label>#LASTNAME1_OLD#</label><input type="text" name="CHANGE_USER_LASTNAME1_OLD" class="formInput" value="{LASTNAME1}"></p>
+                 <p><label>#LASTNAME2_OLD#</label><input type="text" name="CHANGE_USER_LASTNAME2_OLD" class="formInput" value="{LASTNAME2}"></p>
+                 <p><label>#MAIL_OLD#</label><input type="text" name="CHANGE_USER_MAIL_OLD" class="formInput" value="{MAIL}"></p>
+                 <p><label>#UPDATE_DATA#</label><input type="submit"  name="CHANGE_USER_DATA_NO_PASSWORD_SUBMIT" value="#UPDATE_DATA#" class="formSubmitButton"></p>
+            </div>
+            
+
+             <div>
+
+
+                 <p><label>#PASSWORD_OLD#</label><input type="password" name="CHANGE_USER_OLD_PASSWORD" class="formInput"></p>
+                 <p><label>#PASSWORD_NEW#</label><input type="password" name="CHANGE_USER_NEW_PASSWORD" class="formInput"></p>
+                 <p><label>#PASSWORD_RETYPE#</label><input type="password" name="CHANGE_USER_RETYPE_NEW_PASSWORD" class="formInput"></p>
+            </div>
+            <div>
+            <p><label>#UPDATE#</label><input type="submit"  name="CHANGE_USER_PASSWORD_SUBMIT" value="#UPDATE_PASSWORD#" class="formSubmitButton"></p>
+            </div>
+        </form>
+    </div>
+</section>

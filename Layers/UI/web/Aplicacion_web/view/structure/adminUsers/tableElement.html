@@ -1,0 +1,18 @@
+<tr onclick="checkElement('check{USER_IDENTIFICATOR}')">
+    <td><input  type="checkbox" id="check{USER_IDENTIFICATOR}" name="selectedUsers[]" value="{USER_IDENTIFICATOR}"></td>
+    <td><input class='adminContentBox'  type="text" name="CHANGE_USER_NAME__{USER_IDENTIFICATOR}" value="{USER_NAME}"></td>
+    <td><input class='adminContentBox' type="text" name="CHANGE_USER_LASTNAME1__{USER_IDENTIFICATOR}" size="10" value="{USER_LASTNAME1}"></td>
+    <td><input class='adminContentBox' type="text" name="CHANGE_USER_LASTNAME2__{USER_IDENTIFICATOR}" size="10" value="{USER_LASTNAME2}"></td>
+    <td><input class='adminContentBox' type="text" name="CHANGE_USER_REALID__{USER_IDENTIFICATOR}" size="10" value="{USER_REALID}"></td>
+    <td><input class='adminContentBox' type="text" name="CHANGE_USER_MAIL__{USER_IDENTIFICATOR}" size="14" value="{USER_MAIL}"></td>
+    <td><input class='adminContentBox' type="password" name="CHANGE_USER_PASSWORD__{USER_IDENTIFICATOR}" size="12" value="{USER_PASSWORD}"></td>
+    <td><input class='adminContentBox' type="text" name="CHANGE_USER_PHONE__{USER_IDENTIFICATOR}" size="9" value="{USER_PHONE}">
+    
+     <td><select class='adminContentBox' name="CHANGE_USER_CENTRE__{USER_IDENTIFICATOR}">           
+             {LIST_USER_CENTRES}
+     </select>  
+     <select class='adminContentBox' name="CHANGE_USER_AREA__{USER_IDENTIFICATOR}">              
+             {LIST_USER_AREAS}
+     </select> </td>
+    <input class='adminContentBox' type="hidden" name="CHANGE_USER_ROL__{USER_IDENTIFICATOR}"  value="{USER_ROL}">
+</tr>

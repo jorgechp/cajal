@@ -1,0 +1,20 @@
+<section id="userRegister">
+    <form action="index.php?register" method="post" class="form">
+        <p><label>#USER_REGISTER_NAME#</label> <input type="text" name="userName" value="{USER_REGISTER_DATA_NAME}" class='formInput'></p>
+        <p><label>#USER_REGISTER_LASTNAME1#</label> <input type="text" name="userLastname1" value="{USER_REGISTER_DATA_LASTNAME1}" class='formInput'></p>    
+        <p><label>#USER_REGISTER_LASTNAME2#</label> <input type="text" name="userLastname2" value="{USER_REGISTER_DATA_LASTNAME2}" class='formInput'></p>
+        <p><label>#USER_REGISTER_REALID#</label> <input type="text" name="userID" value="{USER_REGISTER_DATA_REALID}" class='formInput'></p>
+        <p><label>#USER_REGISTER_MAIL#</label> <input type="text" name="userMail" value="{USER_REGISTER_DATA_MAIL}" class='formInput'></p>
+        <p><label>#USER_REGISTER_PASSWORD#</label> <input type="password" name="userPassword" class='formInput'></p>
+        <p><label>#USER_REGISTER_PASSWORD_RETYPE#</label> <input type="password" name="userPasswordRetype" class='formInput'></p>
+        <p><label>#USER_REGISTER_PHONE#</label> <input type="text" name="userPhone" value="{USER_REGISTER_DATA_PHONE}" class='formInput'></p>
+        <p><label>#USER_REGISTER_CAPTCHA_IMAGE#</label>
+            <img id="captcha" src="lib/securimage/securimage_show.php" alt="CAPTCHA Image" />
+        </p>
+        <p><label>#USER_REGISTER_CAPTCHA#</label>
+            <input type="text" name="captcha_code" size="10" maxlength="6" />
+            <a href="#" onclick="document.getElementById('captcha').src = 'lib/securimage/securimage_show.php?' + Math.random(); return false"><img src="{IMG_FOLDER}/new_image.png" alt="New image"></a>
+        </p>
+        <div><input type="submit" name="registerSubmit" value="#USER_REGISTER_SUBMIT#"></div>
+    </form>
+</section>

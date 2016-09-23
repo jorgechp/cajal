@@ -1,0 +1,20 @@
+<section>
+    <h2>#CONTACT_FORM#</h2>
+    <p>
+        <ul>
+            {ERROR_LIST}
+        </ul>
+    </p>
+    <form action="index.php?contact" method="POST" class="form">
+        <p><label>#CONTACT_TYPE#</label></p>
+        <input type="radio" name="CONTACT_TYPE_NOTIFICATION" value="1" {CONTACT_TYPE_NOTIFICATION1}>#ERROR#<br>
+        <input type="radio" name="CONTACT_TYPE_NOTIFICATION" value="2" {CONTACT_TYPE_NOTIFICATION2}>#REQUEST#<br>    
+        <p><label>#SUBJECT#</label></p>
+        <input type="text" size="90" name="CONTACT_SUBJECT" value="{CONTACT_SUBJECT}" class="formInput">
+        <p><label>#MESSAGE#</label></p>
+        <textarea rows="10" cols="100" name="CONTACT_TEXT" class="formTextArea">{CONTACT_TEXT}</textarea>
+        <div id="loginFormSubmit">
+            <input type="submit" name="CONTACT_SUBMIT" value="#CONTACT_SUBMIT#">
+        </div>
+    </form>
+</section>

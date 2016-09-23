@@ -1,0 +1,18 @@
+<tr onclick="checkElement('check{ACTIVITY_IDENTIFICATOR}')">
+    <td><input type="checkbox" id="check{ACTIVITY_IDENTIFICATOR}" name="selectedActivity[]" value="{ACTIVITY_IDENTIFICATOR}"></td>
+    <td>
+        <input type="hidden" name="ACTIVITY_IDENTIFICATOR[]" value="{ACTIVITY_IDENTIFICATOR}">
+        <input type="text" name="CHANGE_ACTIVITY_NAME__{ACTIVITY_IDENTIFICATOR}" class='adminTextInput' value="{ACTIVITY_NAME}">        
+    </td>
+    <td><textarea name="CHANGE_ACTIVITY_DESCRIPTION__{ACTIVITY_IDENTIFICATOR}">{ACTIVITY_DESCRIPTION}</textarea></td>    
+    <td><input type="text" class="adminTextInput" name="CHANGE_ACTIVITY_CODE__{ACTIVITY_IDENTIFICATOR}" value="{ACTIVITY_CODE}"></td>
+    <td><a href="index.php?competencesActivity={ACTIVITY_IDENTIFICATOR}"><img src="{IMG_FOLDER}/run.png"><a></td>   
+    <td><a href="index.php?professorsActivity={ACTIVITY_IDENTIFICATOR}"><img src="{IMG_FOLDER}/addParticipant.png"><a></td> 
+    <td><a href="index.php?adminActivities&sessionList={ACTIVITY_IDENTIFICATOR}"><img src="{IMG_FOLDER}/calendar68.png"><a></td>      
+          
+                <td>
+                <select name="CHANGE_ACTIVITY_CATEGORY__{ACTIVITY_IDENTIFICATOR}">
+                     {ACTIVITIES_CATEGORY_LIST}
+                 </select>
+                </td>                   
+</tr>

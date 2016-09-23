@@ -1,0 +1,31 @@
+<h2>#INDICATORS OF#: {COMPETENCE_NAME}</h2>
+
+<p>
+    <a href="index.php?adminCompetences">#BACK_TO_COMPETENCES#</a>
+</p>
+<div>    
+        <p>
+        #UPLOAD_FROM_FILE_DESCRIPTION#
+    </p>
+    <div>
+    <form action="index.php?competencesIndicator={COMPETENCE_ID}" method="POST" class="form">        
+        <p><label>#NAME#</label><input type="text" name="ADD_INDICATOR_NAME" value="{VALUE_INPUT_NAME}" class="formInput"></p>
+        <p><label>#ADD_CODE#</label><input type="text" class="inputCode" name="ADD_INDICATOR_CODE" value="{VALUE_INPUT_CODE}" class="formInput"></p>
+        <p><label>#ADD_DESCRIPTION#</label><textarea name="ADD_INDICATOR_DESCRIPTION" class="formTextArea">{VALUE_INPUT_DESCRIPTION}</textarea></p>
+        <p><label>#ADD_INDICATOR#</label><input type="submit" name="addIndicator" value="#ADD_INDICATOR#" class="formSubmitButton"></p>
+    </form>
+    <br/>
+    {RESULT}
+    
+    </div>
+    <div>
+        <table cellspacing="0"  class="tableElegant">
+            <tr>
+                <th>#INDICATOR_NAME#</th>
+                <th>#INDICATOR_DESCRIPTION#</th>
+                <th>#INDICATOR_REMOVE#</th>
+            </tr>
+            {INDICATOR_LIST}
+        </table>
+    </div>
+</div>

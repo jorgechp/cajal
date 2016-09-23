@@ -1,0 +1,18 @@
+<h2>#SYSTEM_CONFIG#</h2>
+
+<p>#SYSTEM_CONFIG_DESCRIPTION_1#</p>
+
+<form action="index.php?adminSystem&yearSelection" method="post">
+     <select name="yearSelected">
+         {YEAR_SELECTED}
+     </select>
+    <input type="submit" name="form_sent" value="#SEND#"/> 
+</form>
+
+<p>#SYSTEM_CONFIG_DESCRIPTION_2#</p>
+
+<form action="index.php?adminSystem&yearCreation" method="post">
+    <label>#INITIAL_DATA#</label><input type="text" name="createYear1" value="{INITIAL_YEAR} " class='dataBox'>
+    <label>#FINAL_DATA#</label><input type="text" name="createYear2" value="{FINAL_YEAR}  "  class='dataBox'>
+    <p><input type="submit" name="form_sent" value="#CREATE_YEAR#"/> </p>
+</form>

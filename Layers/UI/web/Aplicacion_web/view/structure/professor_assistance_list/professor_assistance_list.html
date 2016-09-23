@@ -1,0 +1,36 @@
+<section>
+    <h2>({ACTIVITY_CODE}) {ACTIVITY_NAME}</h2>
+    <span id='pan'>→<a href="index.php" title="#MY_ACTIVITIES#">#MY_ACTIVITIES#</a></span>
+    <h3>#ASSISTANCE_LIST#</h3>
+
+    <h4>#ASSISTED#</h4>
+
+    <form action="index.php" method="GET">
+        <input type="hidden" name="sessionsAsistance" value="{ACTIVITY_ID}">
+        <label>#VIEW_SESSION#</label>
+        <select name="viewSession">
+            {SESSION_LIST}
+        </select>
+        <input type="submit" name="formSubmit" value="#SEND_DATA#">
+    </form>
+    <table class="tableElegant" cellspacing="0">
+        <tr>
+            <th>#STUDENT_NAME#</th>
+            <th>#STUDENT_DNI#</th>
+            <th>#STUDENT_ASSISTED#</th>
+            <th>#STUDENT_CHANGE#</th>
+        </tr>
+        {ASSISTED_LIST}
+    </table>
+    
+    <h4>#NO_ASSISTED#</h4>
+    <table class="tableElegant" cellspacing="0">
+        <tr>
+            <th>#STUDENT_NAME#</th>
+            <th>#STUDENT_DNI#</th>
+            <th>#STUDENT_ASSISTED#</th>
+            <th>#STUDENT_CHANGE#</th>
+        </tr>
+        {NO_ASSISTED_LIST}
+    </table>
+</section>

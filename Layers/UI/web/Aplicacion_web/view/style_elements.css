@@ -1,0 +1,201 @@
+#informationMenu{
+
+    margin-bottom: 7%;
+}
+
+label {
+    text-align: left;
+    display: block;
+    float: left;        
+    height: 24px;
+    margin: 0 10px 0 0;
+    padding: 3px 7px;
+    width: 150px;
+}
+
+.formInput {
+    background-color: #F3F3F3;
+    border: 1px solid #CCCCCC;
+    height: 16px;
+    padding: 7px;
+    width: 435px;
+}
+
+.formInputLogin {
+    background-color: #F3F3F3;
+    border: 1px solid #CCCCCC;
+    height: 16px;
+    padding: 7px;
+    width: 250px;
+}
+
+
+.formTextArea {
+    background-color: #F3F3F3;
+    border: 1px solid #CCCCCC;
+    height: 16px;
+    padding: 7px;
+    width: 435px;
+    height: 200px;
+}
+
+
+
+.formSelect {
+    background-color: #F3F3F3;
+    border: 1px solid #CCCCCC;
+    height: 32px;
+    padding: 4px;
+    width: 451px;
+}
+
+.form div{
+    text-align: center;
+    margin-top: 3%;
+}
+
+#login {
+    margin-left:30%;
+}
+
+#login form #loginFormSubmit {
+    text-align: left;
+    margin-left:18%;
+
+}
+
+#main .contentDiv{
+    margin-top: 3%;
+}
+
+#navMenu{
+    margin-top: 0.5%;
+    margin-left: 1%;
+    font-size: 18px;
+}
+
+#navMenu ul{
+    display: inline;
+}
+
+#navMenu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+}
+
+h3 .tableElegant{
+    text-align: center;
+}
+
+.sendMessage{    
+    font-size: 18px;
+}
+
+.first{
+    display:inline;
+    width: 49%;
+    float:left;
+}
+.last{    
+    text-align: right;
+    display: inline;
+    font-family: monospace;
+    float:right;
+    width: 30%;
+}
+
+
+
+.lastNoLogin{
+    text-align: right;
+    display: inline;
+    font-family: monospace;
+    float:right;
+    width: 23%;  
+}
+
+.tableStudentEvalTitle{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.indicatorEvaluation div{
+    text-align: center;
+}
+
+.linkInactive{
+    pointer-events: none;
+    cursor: default;
+    color: black;
+}
+
+.tableTextRotate{
+    transform:rotate(90deg);
+}
+
+#toggleText{
+    display: none;
+    border:1px solid;
+    border-radius:25px;
+    background-color: #ffe9e9;
+    box-shadow: 10px 10px 5px #888888;
+
+}
+
+#toggleText form{
+
+    padding: 2%;
+}
+
+#toggleText form {
+ 
+    padding: 2%;
+}
+
+#toggleText form ol{
+    list-style: none;   
+}
+.inputToggleList{
+    margin-right: 3%;
+    display: inline-block;
+}
+
+.displayText{
+    border: solid 1px green;
+    padding: 1%;
+    border-radius:25px;
+    background-color: #ece8f4;
+    box-shadow: 4px 4px 2px #888888;
+}
+.displayFormToggleText{
+    background-color: #ffe9e9;
+    color: black;
+}
+
+#hiddenColumn{
+    display: none;
+}
+
+#userRegister{
+    margin-left: 25%;
+    
+}
+#pan{
+ font-size: 12px;   
+ font-family: "Lucida Console", Monaco, monospace;
+}
+#pan a{
+    text-decoration: none;
+}
+
+#errorText{
+    text-align: center;
+}
+#errorText ul{
+    text-align: left;
+}
+
+.progresstext{
+    font-size: 9px;
+}
