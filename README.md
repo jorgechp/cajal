@@ -5,6 +5,8 @@ Sistema de Evaluación de Competencias profesionales para estudiantes de Grado. 
 
 Copyrigth 
 
-Jorge Chamorro Padial
+Jorge Chamorro Padial &
 Germán Iglesias Padial
+
+Licencia GNU GEPL (Ver archivo LICENSE para más información)
 
