@@ -3,7 +3,7 @@ Sistema de Evaluación de Competencias profesionales para estudiantes de Grado. 
 
 
 
-Copyrigth 
+Copyright 
 
 Jorge Chamorro Padial &
 Germán Iglesias Padial
